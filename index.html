@@ -1,33 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="en">
- <head>
-     <title>Title Goes Here</title>
-  <meta charset="utf-8" />
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/nav.css" />
- </head>
- <body>
-     <header>
-     <h1>Title Goes Here</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
-     </header>
-     
-   <main class="wrapper">
-    <p>Content goes here</p>
-     <footer>
-      <p><small>&copy; 2021 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
-          <a id="html-checker" href="#">Check HTML</a> ~ 
-          <a id="css-checker" href="#">Check CSS</a></small>
-     </p>
-    </footer>
-  </main>
-  <script src="js/main.js"></script>
- </body>
+  <head>
+    <title>Dom Play</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DOM Play</h1>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#" target="_blank">By mohamed yuusuf</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          >&#9776;</a
+        >
+      </nav>
+    </header>
+
+    <main class="wrapper">
+      <section class="description">
+        <h2>🎭 About This Rehearsal Tool</h2>
+        <p>
+          This interactive webpage is designed to help actors easily rehearse their lines by using a simple and intuitive touch interface. Each actor can tap on their character's name to instantly <strong>highlight all of their lines</strong> in the script. When a new actor is selected, their lines are highlighted and all others are un-highlighted, keeping the focus clear.
+        </p>
+        <ul>
+          <li>No page reloads — everything happens instantly using JavaScript and the DOM.</li>
+          <li>Works with <strong>any number of characters and lines</strong>, even if more are added later.</li>
+          <li>Styled for clarity and ease of use during rehearsals on tablets or touch devices.</li>
+        </ul>
+        <p>
+          This tool helps streamline the rehearsal process, making it easier for performers to focus on their part without distractions.
+        </p>
+      </section>
+      
+      <div id="play">
+        <p><span data-actor="alice">Alice: What a curious feeling!</span></p>
+        <p><span data-actor="rabbit">Rabbit: Oh dear! Oh dear! I shall be late!</span></p>
+        <p><span data-actor="alice">Alice: I wonder if I've been changed in the night?</span></p>
+        <p><span data-actor="cat">Cheshire Cat: We're all mad here.</span></p>
+        <p><span data-actor="rabbit">Rabbit: I'm late, I'm late, for a very important date!</span></p>
+        <p><span data-actor="cat">Cheshire Cat: You may have noticed that I'm not all there myself.</span></p>
+      </div>
+      <footer>
+        <p>
+          <small
+            >&copy; 2025 by mohamed yuusuf, All Rights Reserved ~
+            <a id="html-checker" href="#">Check HTML</a> ~
+            <a id="css-checker" href="#">Check CSS</a></small
+          >
+        </p>
+      </footer>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/dom-play.js"></script>
+  </body>
 </html>
